@@ -1,0 +1,41 @@
+@import url(reset.css);
+
+* {
+    color: rgb(73, 68, 68);
+}
+.header p {
+    color: rgb(28, 28, 161);
+}
+[class*="__title"] {
+    color: rgb(185, 22, 22);
+}
+a {
+    color: darkgoldenrod;
+}
+.menu__point2 a {
+    color: green !important;
+}
+.main {
+    color: black;
+}
+.what-is-css__text, .how-it-works__text {
+    color: orange;
+}
+.how-it-works__container *{
+    color: darkgreen;
+}
+p.why-important__text {
+    color: darkorchid;
+}
+.why-important__subtitle.subtitle {
+    color: rgb(182, 67, 67);
+}
+.benefits__container > p {
+    color: gold;
+}
+.whant-to-learn__container ~ div{
+    color: darkmagenta;
+}
+.whant-to-learn__container + p {
+    color: darkred;
+}
