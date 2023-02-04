@@ -1,0 +1,291 @@
+@import url(reset.css);
+
+@font-face {
+    font-family: 'FHA Broken Gothic No1 NC';
+    src: url('../fonts/FHABrokenGothicNo1NC.woff2') format('woff2'),
+        url('../fonts/FHABrokenGothicNo1NC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arthur Gothic';
+    src: url('../fonts/ArthurGothic.woff2') format('woff2'),
+        url('../fonts/ArthurGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ShadowedBlack';
+    src: url('../fonts/ShadowedBlack-Normal.woff2') format('woff2'),
+        url('../fonts/ShadowedBlack-Normal.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ShadowedBlackWide';
+    src: url('../fonts/ShadowedBlackWide-Normal.woff2') format('woff2'),
+        url('../fonts/ShadowedBlackWide-Normal.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+.wrapper__maket {
+    font-family: 'Poppins';
+    padding: 20px;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1240px;
+}
+.title {
+    color: #212529;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 17px;
+}
+.text__container {
+    margin: 0 auto;
+    max-width: 816px;
+}
+.text__box p {
+    padding-top: 23px;
+}
+.text__box {
+    margin-bottom: 80px;
+}
+.text__style {
+    color: #6C757D;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.78;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.image__box {
+    margin-bottom: 57px;
+    max-width: 100%;
+    display: flex;
+}
+.desert__image img{
+    width: 1240px;
+    height: 400px;
+}
+.main__title h2{
+    width: 605px;
+}
+.small__image {
+    display: inline-block;
+    padding: 12px;
+}
+.image__box-for-small {
+    margin: 0 -12px 57px;
+}
+.image__box-for-small img{
+    width: 605px;
+    height: 400px;
+}
+.empty__space {
+    width: 100%;
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+.wrapper__practice {
+    margin: 0 auto;
+    font-family: 'FHA Broken Gothic No1 NC', serif, 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+.header-pr {
+}
+.container-pr {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.header-pr__title {
+    font-family: 'ShadowedBlack';
+    font-size: 80px;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.header-pr__navigation {
+}
+.header__menu {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0;
+}
+.header-menu__point {
+    display: inline-block;
+    font-size: 26px;
+    margin: 0 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: overline;
+}
+.main-pr {
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.side__column {
+    max-width: 25%;
+    display: inline-block;
+    vertical-align: top;
+}
+.side__column-container {
+    margin: 0 auto;
+}
+.side__icon {
+    margin-bottom: 30px;
+}
+.side__icon img {
+    width: 100%;
+}
+.side__menu-container {
+    padding-top: 200px;
+}
+.side__menu {
+    text-align: center;
+}
+.side-point {
+    font-family: 'Arthur Gothic';
+    font-size: 24px;
+    color: darkred;
+    line-height: 1.6;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    text-transform: uppercase;
+    text-align: left;
+    text-decoration: underline;
+    text-shadow: 1px 600px 1px black, 1px 1200px 1px dimgray;
+}
+.main__column {
+    max-width: 75%;
+    display: inline-block;
+}
+.main__column-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+.title-pr {
+    font-family: 'Arthur Gothic';
+    font-size: 28px;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    text-transform: uppercase;
+    text-align: left;
+    text-shadow: 2px 2px 4px darkgoldenrod;
+}
+.text {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+.text p{
+    padding-top: 20px;
+}
+.image__options img {
+    width: 100%;
+}
+.image__options {
+    margin-bottom: 20px;
+}
+.game-proces__block {
+}
+.game-proces__title {
+    font-style: italic;
+}
+.game-proces__text {
+}
+.text {
+}
+.game-proces__subtitle {
+}
+.subtitle {
+    padding-top: 20px;
+    font-family: 'Arthur Gothic';
+    font-size: 20px;
+    color: darkred;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    text-transform: uppercase;
+    text-align: left;
+    text-shadow: 1px 1px 2px black;
+}
+.plot-block {
+}
+.plot-title {
+}
+.title-pr {
+}
+.plot__text span{
+    text-transform: uppercase;
+    display: block;
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px darkred;
+}
+.text {
+}
+.plot__subtitle {
+}
+.subtitle {
+}
+.technical-information__block {
+}
+.technical-information__title {
+}
+.title-pr {
+}
+.technical-information__text {
+}
+.text {
+}
+.reception__block {
+}
+.reception__title {
+}
+.title-pr {
+}
+.reception__text {
+}
+.text {
+}
+.footer-pr {
+}
+.footer__title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.title-pr {
+}
+.footer__text {
+    text-align: center;
+}
+.footer__text a{
+    margin: 0 80px;
+}

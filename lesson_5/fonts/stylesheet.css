@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'FHA Broken Gothic No1 NC';
+    src: url('FHABrokenGothicNo1NC.woff2') format('woff2'),
+        url('FHABrokenGothicNo1NC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arthur Gothic';
+    src: url('ArthurGothic.woff2') format('woff2'),
+        url('ArthurGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
