@@ -1,0 +1,146 @@
+@import url('reset.css');
+
+
+
+.wrapper {
+    max-width: 1440px;
+    padding-bottom: 100px;
+}
+.homework-maket {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #6C757D;
+}
+.homework__container {
+    max-width: 1270px;
+    padding: 10px 15px;
+    margin: 0 auto;
+}
+.homework__text-container {
+    max-width: 816px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+.homework__text-container p {
+    line-height: 1.78;
+    margin-bottom: 30px;
+}
+.homework__title {
+    max-width: 605px;
+    font-weight: 700;
+    font-size: 25px;
+    color: #212529;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+.homework__image-box {
+    margin-bottom: 80px;
+}
+.homework__image-box .left__image {
+    margin-right: 13px;
+}
+.full-screen__image {
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.shadow__block {
+    margin-left: 20px;
+    height: 100px;
+    max-width: 1200px;
+    box-shadow: 10px 10px 0px 5px black, inset 5px 5px 5px 2px darkred;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    color: black;
+    text-shadow: 2px 2px 1px black;
+    padding: 30px 0px 0px 0px;
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+.block {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 5px 20px 5px 20px black;
+    margin: 0px 50px 80px 20px;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.block__triangle {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border-radius: 50% 50% 48% 52% / 99% 100% 0% 1%;
+    box-shadow: 10px 20px 0px 10px darkblue, inset 2px 2px 3px 5px black;
+    padding: 40px 0px 0px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+.border-block {
+    width: 200px;
+    height: 50px;
+    border: 5px solid darkcyan;
+    margin: 0px 0px 0px 30px;
+    padding: 0px 0px 0px 0px;
+    opacity: 0.6;
+    box-shadow: 5px 5px 6px 20px darkmagenta;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 10px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.outline-visibility{
+    width: 300px;
+    height: 100px;
+    outline: 10px dashed darkolivegreen;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.outline-visibility p{
+    visibility: hidden;
+}
+.inset-shadow {
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: underline;
+    padding-top: 30px;
+    border: 2px dotted black;
+    box-shadow: inset 5px 5px 3px 3px black;
+    color: darkorange;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+.display-none {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+    width: 300px;
+    display: none;
+}
+.double-border {
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+    border: 20px double darkgoldenrod;
+}
