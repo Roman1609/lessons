@@ -1,0 +1,37 @@
+.title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.39;
+    color: #495057;
+}
+.menu {
+    display: flex;
+    justify-content: space-between; 
+    column-gap: 25px; 
+    font-size: 12px;
+    line-height: 2.08;  
+    color: rgba(73, 80, 87, 0.5);  
+}
+.menu__point {
+    position: relative;
+    display: inline-block;
+}
+.menu__point:hover {
+    color: #495057;
+}
+.up-title {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.67;
+    color: #E5E5E5;
+}
+.title_big {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.6;
+}
+.sub-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+}
