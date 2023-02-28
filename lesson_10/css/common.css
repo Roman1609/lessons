@@ -1,0 +1,47 @@
+.head-block {
+    display: flex;
+    justify-content: space-between;
+}
+.head-block__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #495057;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu__point, .social__point {
+    font-size: 12px;
+    line-height: 2;
+    color: rgba(73, 80, 87, 0.5);
+}
+.menu__point:not(:last-child), 
+.social__point:not(:last-child) {
+    margin-right: 25px;
+}
+.menu__point {
+    position: relative;
+}
+.social {
+    display: flex;
+    align-items: center;
+}
+.social__point a {
+    display: flex;
+    align-items: center;
+}
+.body__up-text {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.7;
+    color: #E5E5E5;
+    margin-bottom: 15px;
+}
+.body__title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.6;
+    color: #F8F9FA;
+}
