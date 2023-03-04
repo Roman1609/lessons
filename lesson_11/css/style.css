@@ -1,0 +1,298 @@
+@import url(reset.css);
+@import url(common.css);
+
+.wrapper {
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 auto;
+    min-height: 100%;
+    background-color: rgb(167, 164, 164);
+    line-height: 1.5;
+}
+[class*="__container"] {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.header {
+    background-color: #fff;
+}
+.header__navbar {
+    display: inline-block;
+}
+.navbar__main-icons {
+    margin-right: 25px;
+}
+.navbar__main-icons img {
+    vertical-align: middle;
+}
+.navbar__main-icons img:first-child {
+    margin-right: 15px;
+}
+.navbar__menu {
+    margin-right: 110px;
+}
+.navbar__menu li:first-child {
+    margin-right: 25px;
+}
+.head-menu {
+    font-weight: 600;
+    color: #212B36;
+}
+.head-menu__point {
+    position: relative;
+    padding: 38px 0;
+}
+.head-menu__link {
+    padding: 9px 20px;
+}
+.head-menu__link:hover {
+    background-color: #F4F7FF;
+    color: #3056D3;
+}
+.head-menu__link_arrowed::after {
+    content: url('../img/icons/arrow_down.svg');
+    position: relative;
+    bottom: 2px;
+    left: 13px;
+}
+.head-menu__sub-box {
+    position: absolute;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    top: 100%;
+    left: 0;
+    width: 180px;
+    transition: all 0.3s ease-in;
+    z-index: 5;
+}
+.head-menu__point:hover .head-menu__sub-box {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s ease-in;
+}
+.head-menu__sub-menu {
+    padding: 10px 0;
+    position: relative;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 0.5px solid #E7E7E7;
+}
+.head-menu__sub-menu:before {
+    content: '';
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    bottom: 100%;
+    left: 20px;
+}
+.head-menu__sub-menu li {
+    display: block;
+}
+.sub-menu__point {
+    position: relative;
+    padding: 12.5px 24px;
+    color: #637381;
+    font-weight: 500;
+    width: 100%;
+}
+.sub-menu__link {
+    width: 100%;
+}
+.sub-menu__link_arrowed::after {
+    content: url('../img/icons/arrow_right.svg');
+    position: relative;
+    left: 67px;
+}
+.sub-menu__link:hover {
+    color: #3056D3;
+}
+.sub-menu__next-menu-box {
+    position: absolute;
+    top: -60%;
+    left: 100%;
+    display: flex;
+    justify-content: space-between;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+    border-radius: 5px;
+    border: 0.5px solid #E7E7E7;
+    background-color: #fff;
+    padding: 30px;
+    width: 652px;
+    z-index: 5;
+}
+.sub-menu__point:hover .sub-menu__next-menu-box {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s ease-in;
+}
+.sub-menu__next-menu {
+    flex: 1 1 33.333%;
+}
+.next-menu__title {
+    font-weight: 600;
+    color: #212B36;
+    margin-bottom: 20px;
+}
+.under-menu__point:hover {
+    color: #3056D3;
+}
+.under-menu__point:not(:last-child) {
+    margin-bottom: 12px;
+}
+.sub-menu__shop-now-block {
+    position: relative;
+}
+.shop-now-block__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 65px 45px;
+    z-index: 3;
+}
+.shop-now-block::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(205, 131, 90, 0.65);
+}
+.shop-now-block__title {
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.2;
+}
+.shop-now-block__title_big {
+    color: #fff;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+}
+.shop-now-block *:nth-child(2) {
+    margin-bottom: 21px;
+}
+.shop-now-block__btn {
+    color: #fff;
+    font-size: 11px;
+    line-height: 1.2;
+    padding: 7px 15px;
+    background-color: #3056D3;
+    border-radius: 2px;
+}
+
+
+.main {
+    padding: 50px 0;
+}
+.experemental {
+    position: relative;
+    height: 600px;
+}
+.experemental__block {
+    position:absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+.experemental__block:nth-child(1) {
+    background-color: darkblue;
+}
+.experemental__block:nth-child(2) {
+    background-color: darkgoldenrod;
+    top: 40px;
+    left: 80px;
+}
+.experemental__block:nth-child(3) {
+    background-color: darkgreen;
+    top: 80px;
+    left: 160px;
+}
+.experemental__block:nth-child(4) {
+    background-color: darkmagenta;
+    top: 120px;
+    left: 240px;
+}
+.experemental__block:nth-child(5) {
+    background-color: darkred;
+    top: 160px;
+    left: 320px;
+}
+.experemental__block:nth-child(6) {
+    background-color: dimgray;
+    top: 200px;
+    left: 400px;
+}
+.experemental__block:hover {
+    transition: all 0.5s ease;
+    z-index: 2;
+    box-shadow: 0px 0px 20px 5px black;
+    opacity: 1;
+}
+.main__title {
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.main__text {
+    text-align: justify;
+    font-weight: 500;
+    color: #212B36;
+    margin-bottom: 30px;
+}
+.main__container h3:first-of-type {
+    background-color: darkorchid;
+    color: #F4F7FF;
+    text-shadow: 3px 3px 2px black;
+}
+.main__container h3:nth-of-type(2) {
+    background-color: darkorange;
+    color: #212B36;
+    text-shadow: 0px 0px 4px darkred;
+}
+.main__container h3:last-of-type {
+    background-color: darkolivegreen;
+    color: black;
+    text-shadow: 3px 3px 0px darkblue;
+    bottom: 0;
+    left: 0;
+}
+.btn-get-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    outline: 1px solid black;
+    border: 7px dashed blue;
+    background-color: #fff;
+    color: #3056D3;
+    line-height: 1;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 8px;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    right: 94%;
+    bottom: 3%;
+    z-index: 5;
+}

@@ -1,0 +1,42 @@
+.navbar {
+    vertical-align: middle;
+}
+
+.navbar__main-icons, .navbar__menu, .navbar__menu li, .navbar__shop-icons {
+    display: inline-block;
+}
+.navbar__shop-icons a:nth-child(1) {
+    margin-right: 25px;
+}
+.navbar__shop-icons a:nth-child(2) {
+    margin-right: 20px;
+}
+.navbar__shop-icons a:not(:first-child) {
+    position: relative;
+}
+.navbar__shop-icons a:not(:first-child):after {
+    content: '';
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #3056D3;
+    top: 0;
+    right: 0;
+    margin: -7px -7px 0 0;
+    line-height: none;
+}
+.navbar__shop-icons a:nth-child(2):after {
+    content: '3';
+}
+.navbar__shop-icons a:nth-child(3):after {
+    content: '1';
+}
+
+.next-menu, .under-menu, .under-menu * .shop-now-block, .shop-now-block__image, .shop-now-block__body {
+    display: inline-block;
+}
