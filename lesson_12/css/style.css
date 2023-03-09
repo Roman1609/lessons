@@ -1,0 +1,288 @@
+@import url(reset.css);
+
+.wrapper {
+    margin: 0 auto;
+    background: url('../img/design/gotham_bg.webp') center / cover no-repeat;
+    min-height: 100%;
+    overflow: hidden;
+}
+.header {
+    padding: 30px 0;
+}
+[class*="__container"] {
+    max-width: 1130px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.ufo {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    left: 80%;
+    top: 0;
+    z-index: 3;
+}
+.header:hover .ufo {
+    left: -10%;
+    transform: rotate(-45deg);
+    transition: all 4s ease;
+}
+.ufo__cabin {
+    position: absolute;
+    right: 60px;
+    top: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid black;
+    transform: rotate3d(1, 0, 1, 35deg);
+}
+.ufo__cabin::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(217,251,252);
+    background: linear-gradient(110deg, rgba(217,251,252,0.644750702247191) 0%, rgba(86,250,248,0.3076720505617978) 100%);
+}
+.ufo__pilot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 2px;
+}
+.ufo__body {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 300px;
+    height: 120px;
+    background-color: gray;
+    border-radius: 50%;
+    transform: rotate(25deg);
+    border-top: 8px dashed greenyellow;
+    outline: 2px solid #000;
+}
+.ufo__body::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+.ufo__body p {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 8px;
+    border-top: 2px solid #000;
+}
+.ufo__body p span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px dotted rgb(42, 250, 0);
+}
+.ufo__portal {
+    position: absolute;
+    right: 135px;
+    top: 115px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(44,254,157);
+    background: radial-gradient(circle, rgba(44,254,157,1) 0%, rgba(6,51,250,1) 100%);
+    border: 1px solid #000;
+    transform: perspective(500px);
+    transform: rotate3d(1, 0, 1, 45deg);
+}
+.ufo__beam {
+    position: absolute;
+    right: -22px;
+    top: 130px;
+    width: 900px;
+    border-bottom: 550px solid rgba(34,250,95, 0.3);
+    border-left: 450px solid transparent;
+    border-right: 450px solid transparent;
+    transform: skewX(-45deg);
+    z-index: 2;
+}
+
+
+.cards-box {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    max-width: 400px;
+    overflow: hidden;
+    perspective: 500px;
+    transform-style: preserve-3d;
+}
+.card-horizontal {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transition: all 0.8s ease;
+    transform-style: preserve-3d;
+}
+.cards-box:hover .card-horizontal {
+    transform: rotateY(-180deg);
+    transition: all 0.8s ease;
+}
+.card-horizontal__front, .card-horizontal__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card-horizontal__front {
+    background-color: darkgoldenrod;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    z-index: 2;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+}
+.card-horizontal__back {
+    background-color: darkmagenta;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    transform: rotateY(-180deg);
+}
+.card-vertical {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transition: all 0.8s ease;
+    transform-style: preserve-3d;
+}
+.cards-box:hover .card-vertical {
+    transform: rotateX(-180deg);
+    transition: all 0.8s ease;
+}
+.card-vertical__front, .card-vertical__back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card-vertical__front {
+    z-index: 2;
+    transform: rotateX(0deg);
+    backface-visibility: hidden;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: darkgreen;
+}
+.card-vertical__back {
+    transform: rotateX(-180deg);
+    font-weight: 600;
+    font-size: 18px;
+    background-color: darkgrey;
+}
+
+.car__box {
+    position: relative;
+}
+.car__body {
+    max-width: 800px;
+    max-height: 400px;
+    position: absolute;
+    left: 42%;
+    bottom: 60px;
+    transform: translateX(-50%);
+}
+.body-car__left-part {
+    height: 100px;
+    width: 250px;
+    background-color: #141414;
+    border-radius: 100% 0% 9% 91% / 83% 100% 0% 17% ;
+    position: absolute;
+    top: 200px;
+    left: -320px;
+}
+.body-car__middle-part {
+    width: 300px;
+    height: 230px;
+    background-color: #141414;
+    border-radius: 100% 0% 100% 0% / 72% 100% 0% 28% ;
+    position: absolute;
+    top: 185px;
+    left: -120px;
+    transform: translateY(-50%);
+}
+.middle-part__glass {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    background-color: #858484;
+    width: 150px;
+    height: 100px;
+    border-radius: 100% 0% 100% 0% / 100% 100% 0% 0%;
+    overflow: hidden;
+}
+.middle-part__glass::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(7,8,8);
+    background: linear-gradient(180deg, rgba(7,8,8,0.8638518258426966) 0%, rgba(29,34,34,0.5913799157303371) 71%);
+}
+.middle-part__glass img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 60px -8px;
+}
+.body-car__right-part {
+    height: 350px;
+    border-bottom: 15px solid transparent;
+    border-top: 105px solid transparent;
+    border-right: 250px solid #141414;
+    position: absolute;
+    top: -35px;
+    left: 180px;
+}
+.body-car__left-wheel img, .body-car__right-wheel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.body-car__left-wheel, .body-car__right-wheel {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+.body-car__left-wheel {
+    top: 220px;
+    left: -200px;
+}
+.body-car__right-wheel {
+    top: 220px;
+    left: 200px;
+}
