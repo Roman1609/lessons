@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:500,600,700&display=swap" rel="stylesheet">
+    <title>Lesson_16</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header"></header>
+        <main class="main">
+            <div class="checkout">
+                <div class="checkout__container">
+                    <div class="checkout__head-block">
+                        <h2 class="checkout__title">Checkout</h2>
+                        <p class="checkout__count-text">There are 3 products in your cart</p>
+                    </div>
+                    <p class="checkout__form-title">Billing Details</p>
+                    <div class="checkout__form-container">
+                        <form action="#" method="post" enctype="multipart/form-data" class="checkout__form form-checkout">
+                            <div class="form-checkout__names">
+                                <input tabindex="1" required autocomplete="off" name="first-name" value="" placeholder="First name*" type="text" class="form-checkout__first-name form-checkout__first-name_tab">
+                                <input tabindex="2" required autocomplete="off" name="last-name" value="" placeholder="Last name*" type="text" class="form-checkout__last-name form-checkout__last-name_tab">
+                            </div>
+                            <div class="form-checkout__addresses">
+                                <input tabindex="3" required autocomplete="off" name="address-main" value="" placeholder="Address*" type="text" class="form-checkout__address-main form-checkout__address-main_tab">
+                                <input tabindex="4" autocomplete="off" name="address-2" value="" placeholder="Address line 2" type="text" class="form-checkout__address-2 form-checkout__address-2_tab">
+                            </div>
+                            <div class="form-checkout__cities">
+                                <select required tabindex="5" name="country" class="form-checkout__countries form-checkout__countries_tab" id="countries-selector">
+                                    <option selected value="" class="form-checkout__country form-checkout__country_hidden">
+                                        Country*
+                                    </option>
+                                    <option value="Ukraine" class="form-checkout__country">
+                                        Ukraine
+                                    </option>
+                                    <option value="German" class="form-checkout__country">
+                                        German
+                                    </option>
+                                    <option value="United Kingdom" class="form-checkout__country">
+                                        United Kingdom
+                                    </option>
+                                    <option value="USA" class="form-checkout__country">
+                                        USA
+                                    </option>
+                                </select>
+                                <input tabindex="6" required autocomplete="off" name="City" value="" placeholder="City/Town*" type="text" class="form-checkout__city form-checkout__city_tab">
+                            </div>
+                            <div class="form-checkout__postcode-phone">
+                                <input tabindex="7" required autocomplete="off" name="first-postcode" value="" placeholder="Postcode / ZIP*" type="text" class="form-checkout__first-postcode form-checkout__first-postcode_tab">
+                                <input tabindex="8" required minlength="13" autocomplete="off" name="first-phone" value="" placeholder="Phone*" type="tel" class="form-checkout__first-phone form-checkout__first-phone_tab">
+                            </div>
+                            <div class="form-checkout__postcode-phone">
+                                <input tabindex="9" required autocomplete="off" name="second-postcode" value="" placeholder="Postcode / ZIP*" type="text" class="form-checkout__second-postcode form-checkout__second-postcode_tab">
+                                <input tabindex="10" required minlength="13" autocomplete="off" name="second-phone" value="" placeholder="Phone*" type="tel" class="form-checkout__second-phone form-checkout__second-phone_tab">
+                            </div>
+                            <div class="form-checkout__additional-inf">
+                                <textarea tabindex="11" class="form-checkout__additional form-checkout__additional_tab form-checkout__additional_big" name="additional-info" id="additional-message" placeholder="Additional information"></textarea>
+                            </div>
+                            <div class="form-checkout__questions">
+                                <div class="form-checkout__question-1 question">
+                                    <input tabindex="12" type="checkbox" name="question-create" value="create-account" id="account-create">
+                                    <label class="form-checkout__label-1 lables" for="account-create">Create Account</label>
+                                </div>
+                                <div class="form-checkout__question-2 question">
+                                    <input tabindex="13" type="checkbox" name="ship" value="ship-to" id="ship-different">
+                                    <label class="form-checkout__label-2 lables" for="ship-different">Ship to a different address?</label>
+                                </div>
+                            </div>
+                            <h3 class="form-checkout__coupon-title">Apply Coupon to get discount!</h3>
+                            <div class="form-checkout__coupon-box">
+                                <input placeholder="Coupon code" tabindex="14" value="" name="coupon-code" type="text" class="form-checkout__coupon-input form-checkout__coupon-input_tab form-checkout__coupon-input_short">
+                                <button class="form-checkout__coupon-btn" name="have-coupon" type="button">Apply Code</button>
+                            </div>
+                            <div class="form-checkout__submit-btn">
+                                <button type="submit">Place an Order</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <a target="_blank" href="index-2.html" class="footer__link">NEXT FORM PAGE</a>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,187 @@
+@import url(reset.css);
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+[class*="__container"] {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+.main {
+    padding: 100px 0;
+}
+.checkout__head-block {
+    margin-bottom: 50px;
+}
+.checkout__title {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.25;
+    color: #212B36;
+    margin-bottom: 8px;
+}
+.checkout__count-text {
+    line-height: 1.5;
+    color: #637381;
+    margin-bottom: 50px;
+}
+.checkout__form-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.25;
+    color: #212B36;
+    margin-bottom: 30px;
+}
+
+.checkout__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.form-checkout div {
+    display: flex;
+    column-gap: 28px;
+    align-items: flex-start;
+    max-width: 700px;
+}
+[class*="_tab"] {
+    outline: 1px solid #E7E7E7;
+    border-radius: 7px;
+    flex: 0 1 50%;
+    height: 54px;
+    padding-left: 25px;
+    line-height: 1.5;
+    color: #637381;
+}
+[class*="_tab"]:focus {
+    outline-color: #3056D3;
+}
+.form-checkout__countries, .form-checkout__countries option {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #637381;
+}
+.form-checkout__country_hidden {
+    display: none;
+}
+.form-checkout__countries {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('../img/icons/arrow-down.svg') right 20px center no-repeat;
+}
+.form-checkout__additional-inf {
+    margin-bottom: 35px;
+}
+.form-checkout__additional_big {
+    flex: 1 1 100%;
+    min-height: 180px;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 25px;
+    resize: vertical;
+}
+.form-checkout__questions {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    margin-bottom: 55px;
+}
+.question {
+    position: relative;
+}
+.question input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.question input:focus + .lables {
+    text-decoration: underline;
+    border-radius: 2px;
+}
+.lables {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+}
+.lables::before {
+    content: '';
+    flex: 0 0 22px;
+    width: 22px;
+    height: 22px;
+    border: 0.7px solid #E7E7E7;
+    border-radius: 4px;
+}
+.question input:checked + .lables::before {
+    background: url('../img/icons/checked.svg') center no-repeat;
+}
+.form-checkout__coupon-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #212B36;
+}
+.form-checkout__coupon-box {
+    column-gap: 20px;
+}
+.form-checkout__coupon-input {
+    flex: 0 1 325px;
+}
+.form-checkout__coupon-btn {
+    padding: 12px 22px;
+    color: #E7E7E7;
+    background-color: #212B36;
+    border-radius: 5px;
+    align-self: stretch;
+    font-weight: 600;
+    line-height: 1.5;
+    max-height: 60px;
+}
+.form-checkout__coupon-btn:active {
+    color: #212B36;
+    background-color: #E7E7E7;
+    border: 1px solid #212B36;
+}
+.form-checkout__submit-btn {
+    display: flex;
+}
+.form-checkout__submit-btn button {
+    flex: 1 1 100%;
+    padding: 12px 150px;
+    background: #3056D3;
+    border-radius: 5px;
+    color: #fff;
+    line-height: 1.5;
+}
+.form-checkout__submit-btn button:active {
+    background: #2da9b9;
+    color: #212B36;
+}
+.footer {
+    padding: 50px 0;
+    margin: 0 auto;
+}
+.footer__link {
+    color: #1cc925;
+    padding: 10px 30px;
+    background-color: #554485;
+    border: 1px solid #a4ca1b;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+}
