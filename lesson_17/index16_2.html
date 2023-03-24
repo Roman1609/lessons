@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style16_2.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,500&display=swap" rel="stylesheet">
+    <title>Lesson_16_2</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__links">
+                    <a href="index15_1.html" target="_blank" class="header__link header__link_15-1">Lesson_15_1 adaptived</a>
+                    <a href="index15_2.html" target="_blank" class="header__link header__link_15-2">Lesson_15_2 adaptived</a>
+                    <a href="index16_1.html" target="_blank" class="header__link header__link_16-1">Lesson_16_1 adaptived</a>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="shopping-page">
+                <div class="shopping-page__container">
+                    <div class="shopping-page__form-box form-shopping">
+                        <form action="#" method="post" enctype="multipart/form-data" class="form-shopping">
+                            <div class="form-shopping__log-in log-in">
+                                <h2 class="log-in__title log-in__title_same-title">Shipping Address</h2>
+                                <div class="log-in__e-mail-box log-in__e-mail-box_flex-row">
+                                    <label for="e-mail" class="log-in__e-mail-label log-in__e-mail-label_same-label">Email Address <span>*</span></label>
+                                    <input id="e-mail" tabindex="1" required name="mail" value="" placeholder="roni_cost@example.com" type="email" class="log-in__e-mail-input log-in__e-mail-input_same-input">
+                                </div>
+                                <div class="log-in__password-box log-in__password-box_flex-row">
+                                    <label for="password-1" class="log-in__password-label log-in__password-label_same-label">Password</label>
+                                    <input id="password-1" tabindex="2" name="password" value="" placeholder="******************" type="password" class="log-in__password-input log-in__password-input_same-input">
+                                </div>
+                                <div class="log-in__zip-box log-in__zip-box_flex-row">
+                                    <label for="password-1" class="log-in__zip-label log-in__zip-label_same-label">Zip/Postal Code</label>
+                                    <input id="zip-postal" tabindex="3" name="zip" value="" type="text" class="log-in__zip-input log-in__zip-input_same-input">
+                                </div>
+                                <p class="log-in__text">You already have an account with us. Sign in or continue as guest.</p>
+                                <div class="log-in__btn-box">
+                                    <button type="button" class="log-in__btn log-in__btn_same-btn">login</button>
+                                    <a href="#" class="log-in__forgot-link">Forgot Your Password?</a>
+                                </div>
+                            </div>
+                            <div class="form-shopping__shipping shipping">
+                                <div class="shipping__first-name-box shipping__first-name-box_flex-row">
+                                    <label for="first-name-01" class="shipping__first-name-label shipping__first-name_same-label">First Name <span>*</span></label>
+                                    <input id="first-name-01" tabindex="4" required name="first-name" value="" type="text" class="shipping__first-name-input shipping__first-name-input_same-input">
+                                </div>
+                                <div class="shipping__last-name-box shipping__last-name-box_flex-row">
+                                    <label for="last-name-01" class="shipping__last-name-label shipping__last-name_same-label">Last Name <span>*</span></label>
+                                    <input id="last-name-01" tabindex="5" required name="last-name" value="" type="text" class="shipping__last-name-input shipping__last-name-input_same-input">
+                                </div>
+                                <div class="shipping__company-box shipping__company-box_flex-row">
+                                    <label for="company-01" class="shipping__company-label shipping__company_same-label">Company</label>
+                                    <input id="company-01" tabindex="6" name="company" value="" type="text" class="shipping__company-input shipping__company-input_same-input">
+                                </div>
+                                <div class="shipping__address-box shipping__address_flex-row">
+                                    <label for="address-01" class="shipping__address-label shipping__address_same-label">Street Address <span>*</span></label>
+                                    <input id="address-01" tabindex="7" required name="address" value="" type="text" class="shipping__address-input shipping__address_same-input">
+                                    <input id="address-02" tabindex="8" required name="address" value="" type="text" class="shipping__address-input shipping__address_same-input">
+                                    <input id="address-03" tabindex="9" required name="address" value="" type="text" class="shipping__address-input shipping__address_same-input">
+                                </div>
+                                <div class="shipping__country-box shipping__country-box_flex-row">
+                                    <label for="country-01" class="shipping__country-label shipping__country_same-label">Country <span>*</span></label>
+                                    <input id="country-01" tabindex="10" required name="country" value="" type="text" class="shipping__country-input shipping__country-input_same-input">
+                                </div>
+                                <div class="shipping__state-box shipping__state-box_flex-row">
+                                    <label for="state-01" class="shipping__country-label shipping__country_same-label">State/Province <span>*</span></label>
+                                    <select tabindex="11" class="shipping__state-select shipping__state-select_same-input" name="state" id="state-01">
+                                        <option selected value="please select" class="shipping__state-option shipping__state-option_none">
+                                            Please select a region, state or province
+                                        </option>
+                                        <option value="Washington" class="shipping__state-option shipping__state-option_styled">
+                                            Washington
+                                        </option>
+                                        <option value="Alabama" class="shipping__state-option">
+                                            Alabama
+                                        </option>
+                                        <option value="Ohio" class="shipping__state-option">
+                                            Ohio
+                                        </option>
+                                        <option value="Florida" class="shipping__state-option">
+                                            Florida
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-shopping__methods methods">
+                                <h2 class="methods__title methods__title_same-title">Shipping Methods</h2>
+                                <div class="methods__radio-box">
+                                    <div class="methods__radio-1-price radio-price">
+                                        <input id="5$" tabindex="12" value="5$-fixed" name="shipping-price" type="radio" class="radio-price__radio-1-input">
+                                        <label for="5$" class="radio-price__radio-1-label">$5.00</label>
+                                        <span>Fixed</span><span>Flat Rate</span>
+                                    </div>
+                                    <div class="methods__radio-2-price radio-price">
+                                        <input id="10$" tabindex="13" value="10$-table-rate" name="shipping-price" type="radio" class="radio-price__radio-2-input">
+                                        <label for="10$" class="radio-price__radio-2-label">$10.00</label>
+                                        <span>Table Rate</span><span>Best Way</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-shopping__next-back next-back">
+                                <button class="next-back__btn next-back__btn_same-btn" value="next" name="next-form-page" type="button">next
+                                </button>
+                                <a href="index16_1.html" class="next-back__back-link">Back</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>

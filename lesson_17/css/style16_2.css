@@ -1,0 +1,308 @@
+@import url(reset.css);
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:regular,500&display=swap);
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+[class*="__container"] {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+.header {
+    padding: 50px 0;
+}
+.header__link {
+    flex: 1 1 33.333%;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+}
+.header__links {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.header__link_15-1 {
+    background-color: darkred;
+}
+.header__link_15-2 {
+    background-color: darkblue;
+}
+.header__link_16-1 {
+    background-color: darkmagenta;
+}
+.header__link_16-2 {
+    background-color: darkgreen;
+}
+@media (max-width: 990.98px) {
+    .header {
+        padding: 20px 0;
+    }
+}
+@media (max-width: 750px) {
+    .header {
+        padding: 10px 0;
+    }
+    .header__links {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .header__link {
+        flex: 1 1 100%;
+        padding: 20px 10px;
+    }
+}
+.shopping-page {
+    padding: 50px 0; 
+}
+.form-shopping {
+    max-width: 600px;
+}
+.form-shopping__log-in {
+    padding: 36px 0;
+    border-bottom: 1px solid #C4C4C4;
+    margin-bottom: 39px;
+}
+.log-in {
+    display: flex;
+    flex-direction: column;
+}
+.log-in__title {
+    margin-bottom: 34px;
+}
+[class*="_same-title"] {
+    font-family: "Oswald";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2.83;
+}
+[class*="_flex-row"] {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+[class*="_same-label"] {
+    color: #3F3F3F;
+    text-transform: capitalize;
+}
+[class*="_same-label"] span {
+    color: red;
+}
+[class*="_same-input"] {
+    outline: 1px solid #C4C4C4;
+    flex: 0 1 451px;
+    height: 44px;
+    padding-left: 16px;
+    transition: all 0.2s;
+}
+[class*="_same-input"]::placeholder {
+    color: #3F3F3F;
+}
+[class*="_same-input"]:focus {
+    outline: 2px solid #C4C4C4;
+    transition: all 0.2s;
+}
+.log-in__zip-box {
+    margin-bottom: 10px;
+}
+.log-in__text {
+    font-size: 14px;
+    line-height: 1.43;
+    color: #828282;
+    margin-bottom: 24px;
+}
+.log-in__btn-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 25px;
+}
+[class*="_same-btn"] {
+    width: 120px;
+    height: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "Oswald";
+    font-weight: 500;
+    text-transform: uppercase;
+}
+[class*="_same-btn"]:active {
+    background-color: #fff;
+    color: #000000;
+    border: 1px solid black;
+}
+.log-in__forgot-link {
+    line-height: 1.43;
+    color: #0F6DB1;
+    position: relative;
+}
+.log-in__forgot-link::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 1px;
+    background-color: #0F6DB1;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+    transform-origin: center;
+}
+.log-in__forgot-link:hover::before {
+    width: 100%;
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s;
+    transform-origin: center;
+}
+
+.shipping {
+    padding-bottom: 46px;
+}
+.shipping__address-box {
+    flex-wrap: wrap;
+    row-gap: 24px;
+    justify-content: flex-end;
+}
+.shipping__address-label {
+    flex: 1 0 auto;
+    justify-self: flex-start;
+}
+.shipping__state-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('../img/icons/arrow-down-2.svg') right 15px center no-repeat;
+}
+
+.shipping__state-select, .shipping__state-option {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #3F3F3F;
+}
+.shipping__state-option_none {
+    display: none;
+}
+.shipping__state-option_styled {
+    color: darkorange;
+    font-weight: bold;
+}
+.methods {
+    padding-bottom: 24px;
+}
+.methods__title {
+    margin-bottom: 40px;
+}
+.methods__radio-box {
+    border-top: 1px solid #C4C4C4;
+}
+.radio-price {
+    padding: 15px 63px 15px 0;
+    position: relative;
+    max-width: 443px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.radio-price span {
+    flex: 0 1 80px;
+}
+.radio-price input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    visibility: visible;
+    opacity: 0;
+}
+.radio-price__radio-1-input:focus + .radio-price__radio-1-label,
+.radio-price__radio-2-input:focus + .radio-price__radio-2-label
+ {
+    color: #000000;
+}
+.radio-price label {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 13px;
+    color: #828282;
+}
+.radio-price__radio-1-label::before,
+.radio-price__radio-2-label::before
+ {
+    content: '';
+    flex: 0 0 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #828282;
+    background-color: transparent;
+}
+.radio-price__radio-1-input:checked + .radio-price__radio-1-label::before,
+.radio-price__radio-2-input:checked + .radio-price__radio-2-label::before {
+    border: 3px solid #000000;
+}
+.methods__radio-2-price {
+    border-top: 1px solid #C4C4C4;
+}
+.next-back {
+    display: flex;
+    max-width: 600px;
+    justify-content: space-between;
+    align-items: center;
+}
+.next-back__back-link {
+    font-family: "Oswald";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #828282;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+.next-back__back-link:hover {
+    color: #000000;
+    transition: all 0.3s;
+}
+
+@media (max-width: 600px) {
+    [class*="__container"] {
+        max-width: none;
+    }
+    [class*="_flex-row"] {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 14px;
+        gap: 5px;
+    }
+    [class*="_same-label"] {
+        flex: 1 1 100%;
+        justify-content: flex-start;
+    }
+    [class*="_same-input"] {
+        flex: 1 1 100%;
+        padding-left: 6px;
+    }
+    .methods__title {
+        margin-bottom: 15px;
+    }
+}
