@@ -1,0 +1,238 @@
+@import url(reset.css);
+@import url(common.css);
+
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+[class*="__container"] {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+.main {
+    flex: 1 1 auto;
+}
+.minimalist {
+    padding: 50px 0;
+}
+.grid-areas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 32px;
+    grid-auto-flow: row;
+    grid-auto-rows: 1fr;
+    
+    /* grid-template-areas: 
+    "project-overview design-proces"
+    "chair mirror"
+    "sofa-comod sofa-comod"
+    "sofa walls"; */
+}
+.text-part {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.text-part__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.4;
+    color: #333333;
+}
+.text-part__text {
+    line-height: 1.6;
+    color: #9C9C9C;
+    flex: 1 1 auto;
+}
+.text-part__underwrite {
+    line-height: 160%;
+    color: #9C9C9C;
+    display: flex;
+    gap: 80px;
+}
+.grid-areas__design-proces p:first-of-type {
+    margin-bottom: 6px;
+}
+.small-image {
+    position: relative;
+    padding-bottom: 87.842466%; /* 513/584 */
+    overflow: hidden;
+}
+.small-image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+}
+/* .grid-areas__project-overview {
+    grid-area: project-overview;
+}
+.grid-areas__design-proces {
+    grid-area: design-proces;
+}
+.grid-areas__chair {
+    grid-area: chair;
+}
+.grid-areas__mirror {
+    grid-area: mirror;
+}
+.grid-areas__sofa-comod {
+    grid-area: sofa-comod;
+}
+.grid-areas__sofa {
+    grid-area: sofa;
+}
+.grid-areas__walls {
+    grid-area: walls;
+} */
+.big-image {
+    grid-column: span 2;
+    position: relative;
+    padding-bottom: 42.75%; /* 513/1200 */
+}
+.big-image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+}
+
+@media (max-width: 990.98px) {
+    .grid-areas {
+        gap: 20px;
+    }
+    .text-part {
+        gap: 15px;
+    }
+    .text-part__title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 140%;
+        color: #333333;
+    }
+    .text-part__underwrite {
+        gap: 40px;
+    }
+    .grid-areas__design-proces p:first-of-type {
+        margin-bottom: 0px;
+    }
+}
+@media (max-width: 819.98px) {
+    .grid-areas {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 32px;
+        grid-auto-flow: row;
+        grid-auto-rows: auto;
+    }
+    .text-part {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .big-image {
+        grid-column: 1 / 1;
+    }
+}
+@media (max-width: 519.98px) {
+    .text-part__title {
+        font-size: 20px;
+    }
+    .text-part__text {
+        font-size: 14px;
+    }
+    .text-part__underwrite {
+        font-size: 12px;
+        gap: 20px;
+    }
+}
+
+.footer {
+    padding: 50px 50px;
+    margin: 0 auto;
+}
+
+.btn-pannel {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "side-btn top-btn"
+    "side-btn middle-btn"
+    "bottom-btn bottom-btn";
+    gap: 10px;
+}
+.btn-pannel a {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    text-align: center;
+    padding: 10px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #9C9C9C;
+    border-radius: 15px;
+}
+
+.side-btn {
+    grid-area: side-btn;
+
+    color: darkgreen;
+    background-color: darkgoldenrod;
+}
+.top-btn {
+    grid-area: top-btn;
+
+    color: darkgray;
+    background-color: darkmagenta;
+}
+.middle-btn {
+    grid-area: middle-btn;
+
+    color: darkorange;
+    background-color: darkred;
+}
+.bottom-btn {
+    grid-area: bottom-btn;
+
+    color: darkcyan;
+    background-color: darkslateblue;
+}
+@media (max-width: 729.98px) {
+    .footer {
+        padding: 30px 10px;
+        margin: 0 auto;
+    }
+    .btn-pannel a {
+        font-size: 18px;
+        text-align: center;
+        padding: 10px 50px;
+    }
+}
+@media (max-width: 459.98px) {
+    .btn-pannel {
+        gap: 20px;
+    }
+    .btn-pannel a {
+        font-size: 14px;
+        text-align: center;
+        padding: 5px 20px;
+        letter-spacing: normal;
+        word-spacing: normal;
+    }
+}
