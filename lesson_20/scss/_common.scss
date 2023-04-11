@@ -1,0 +1,144 @@
+// BUTTON TRANSPARENT =======================
+.button-transparent {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5; 
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 13px 43px;
+    border: 2px solid #000000;
+    transition: all 0.3s;
+    @media (any-hover:hover) {
+        &:hover {
+            background-color: #000000;
+            color: #ffff;
+            transition: all 0.3s;
+        }
+    }
+    @media (max-width:489.98px) {
+        padding: 15px 35px;
+    }
+}
+// BUTTON TRANSPARENT =======================
+// ITEM SHOP ================================
+.item-shop {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    // .item-shop__image
+
+    &__image {
+        position: relative;
+        padding-bottom: 130.813953%; /* 450/344 */
+        margin-bottom: 14px;
+        & img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    // .item-shop__category-link
+
+    &__category-link {
+        font-weight: 600;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #BDBDBD;
+        @media (max-width:589.98px) {
+            font-size: 16px;
+            color: #929090;
+        }
+    }
+
+    // .item-shop__title
+
+    &__title {
+        flex: 1 1 auto;
+        font-weight: 300;
+        font-size: 18px;
+        margin-bottom: 18px;
+        @media (max-width:589.98px) {
+            font-size: 22px;
+            font-weight: 400;
+        }
+    }
+
+    // .item-shop__price-row
+
+	&__price-row {
+	}
+
+    // .item-shop__price
+
+    &__price {
+        font-weight: 500;
+        font-size: 22px;
+        text-transform: uppercase;
+        margin-right: 14px;
+    }
+    &__price_red {
+        color: #EB5757;
+    }
+
+	// .item-shop__price-old
+
+	&__price-old {
+        text-transform: uppercase;
+        color: #828282;
+        text-decoration: line-through;
+	}
+}
+// ITEM SHOP ================================
+// SCROLL BLOCK + TITLE =====================
+.scroll-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 26px;
+    gap: 20px;
+
+    // .scroll-block__title
+
+    &__title {
+        font-size: 24px;
+        line-height: 2.83;
+    }
+
+    // .scroll-block__controls
+
+    &__controls {
+    }
+}
+// SCROLL BLOCK =============================
+// ITEMS SCROLLIG =============================
+.items-scrolling {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 27px;
+    @media (max-width:1599.98px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @media (max-width:1159.98px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width:989.98px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    @media (max-width:589.98px) {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    // .items-featured__item
+
+    &__item {
+        margin-bottom: 0px;
+    }
+}
+// ITEMS SCROLLIG =============================
