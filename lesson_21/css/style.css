@@ -1,0 +1,316 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,500,700&display=swap);
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+
+textarea,
+button,
+input {
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+  background-color: inherit;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+[class*=__container] {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  min-height: 5.625rem;
+  background-color: rgb(97, 71, 71);
+}
+.title-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2.1875rem;
+  gap: 1.5625rem;
+}
+.title-menu__title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.39;
+  color: #F8F9FA;
+}
+.title-menu__title::after {
+  content: ".";
+  color: #DDBEA9;
+}
+.title-menu__burger {
+  display: none;
+}
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5625rem;
+}
+.menu__point {
+  position: relative;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 2.08;
+  color: rgba(248, 249, 250, 0.5);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+@media (any-hover: hover) {
+  .menu__point:hover .menu__link::after {
+    left: 0%;
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .menu__point:hover .sub-menu {
+    top: 150%;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .menu__point:hover {
+    color: #F8F9FA;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+.menu__link {
+  position: relative;
+}
+.menu__link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 130%;
+  width: 0%;
+  height: 0.125rem;
+  background-color: #DDBEA9;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.menu-with-sub::after {
+  content: url("../img/icons/arrow-down.svg");
+  display: inline-block;
+  padding-left: 5px;
+}
+.sub-menu {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 180%;
+  left: -1.25rem;
+  min-width: 8.5rem;
+  background-color: #212529;
+  border-radius: 5px;
+  padding: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.625rem;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.sub-menu::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  width: 80%;
+  height: 20%;
+}
+.sub-menu__point {
+  width: 100%;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 2.08;
+  color: rgba(248, 249, 250, 0.5);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+@media (any-hover: hover) {
+  .sub-menu__point:hover {
+    color: #F8F9FA;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+.search-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 1.5625rem;
+  position: relative;
+}
+.search-field__input {
+  width: 0.0625rem;
+  font-weight: 500;
+  background-color: rgba(229, 229, 229, 0.5);
+  height: 100%;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.search-field__input::-webkit-input-placeholder {
+  font-weight: 300;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  background: url("../img/icons/search-icon.svg") left 2px center no-repeat;
+  padding-left: 1.125rem;
+  font-size: 0.75rem;
+  color: black;
+}
+.search-field__input::-moz-placeholder {
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  background: url("../img/icons/search-icon.svg") left 2px center no-repeat;
+  padding-left: 1.125rem;
+  font-size: 0.75rem;
+  color: black;
+}
+.search-field__input:-ms-input-placeholder {
+  font-weight: 300;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  background: url("../img/icons/search-icon.svg") left 2px center no-repeat;
+  padding-left: 1.125rem;
+  font-size: 0.75rem;
+  color: black;
+}
+.search-field__input::-ms-input-placeholder {
+  font-weight: 300;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  background: url("../img/icons/search-icon.svg") left 2px center no-repeat;
+  padding-left: 1.125rem;
+  font-size: 0.75rem;
+  color: black;
+}
+.search-field__input::placeholder {
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../img/icons/search-icon.svg") left 2px center no-repeat;
+  padding-left: 1.125rem;
+  font-size: 0.75rem;
+  color: black;
+}
+.search-field__input:focus {
+  width: 12.5rem;
+  padding: 0.3125rem;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  outline: none;
+}
+.search-field__label {
+  padding-left: 1.5625rem;
+  cursor: pointer;
+}
+.search-field__label img {
+  width: 120%;
+  height: 120%;
+}
+.search-field__label:focus .search-field__input {
+  width: 12.5rem;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
