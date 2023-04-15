@@ -1,0 +1,284 @@
+
+// ======== MENU ========= 
+.menu {
+    display: flex;
+    align-items: center;
+    gap: rem(25);
+    @media (max-width:rem(699.98)) {
+        flex-wrap: wrap;
+        gap: rem(10);
+    }
+    @media (max-width:em(599.98)) {
+        display: none;
+        position: fixed;
+        z-index: 3;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #212529;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: 50px 15px 20px;
+        overflow: auto;
+        &::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 50px;
+            width: 100%;
+            z-index: 3;
+            background-color: #212529;
+        }
+    }
+    // .menu__point
+    
+    &__point {
+        position: relative;
+        font-weight: 500;
+        font-size: rem(12);
+        line-height: 2.08;
+        color: rgba(248, 249, 250, 0.5);
+        transition: all 0.3s;
+        @media (any-hover:hover) {
+            &:hover .menu__link::after,
+            .menu__link_active::after {
+                left: 0%;
+                width: 100%;
+                visibility: visible;
+                opacity: 1;
+                transition: all 0.3s;
+            }
+            &:hover .sub-menu {
+                top: 150%;
+                visibility: visible;
+                opacity: 1;
+                transition: all 0.3s;
+                pointer-events: auto;
+            }
+            &:hover, .menu__link_active {
+                color: #F8F9FA;
+                transition: all 0.3s;
+            }
+        }
+        @media (max-width:em(599.98)) {
+            color: #F8F9FA;
+            font-size: rem(18);
+        }
+    }
+    
+    // .menu__link
+
+    &__link {
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 130%;
+            width: 0%;
+            height: rem(2);
+            background-color: #DDBEA9;
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.3s;
+        }
+    }
+}
+// ======== MENU ========= 
+// ======== SUB-MENU ==========
+.sub-menu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 180%;
+    left: rem(-20);
+    min-width: rem(136);
+    background-color: #212529;
+    border-radius: 5px;
+    padding: rem(20);
+    z-index: 3;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    gap: rem(10);
+
+    transition: all 0.3s;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 100%;
+        width: 80%;
+        height: rem(50);
+        z-index: 3;
+    }
+    @media (max-width:em(599.98)) {
+        visibility: visible;
+        opacity: 1;
+        position: inherit;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: rem(10);
+    }
+    // .sub-menu__point
+
+    &__point {
+        width: 100%;
+        font-weight: 500;
+        font-size: rem(12);
+        line-height: 2.08;
+        color: rgba(248, 249, 250, 0.5);
+
+        transition: all 0.3s;
+        @media (any-hover:hover) {
+            &:hover {
+                color: #cbd4dd;
+                transition: all 0.3s;
+            }
+        }
+        @media (max-width:em(599.98)) {
+            color: #94a5b6;
+            font-size: rem(16);
+        }
+    }
+
+    // .sub-menu__link
+
+    &__link {
+        width: 100%;
+    }
+}
+// ======== SUB-MENU ==========
+// ======= CARD =============
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: rem(30);
+    position: relative;
+    @media (any-hover:hover) {
+        &:hover .card__button {
+            visibility: visible;
+            opacity: 1;
+            transition: all 0.3s;
+            cursor: pointer;
+            z-index: 3;
+            pointer-events: auto;
+        }
+    }
+    
+    // .card__image
+
+    &__image {
+        position: relative;
+        padding-bottom: 63.613232%; /* 250/393 */
+        
+        & img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+    }
+
+    // .card__button
+
+    &__button {
+        position: absolute;
+        top: rem(30);
+        right: rem(30);
+        font-weight: 700;
+        font-size: rem(8);
+        line-height: 2.5;
+        text-align: center;
+        color: #F8F9FA;
+        padding: rem(3) rem(12);
+        background: rgba(33, 37, 41, 0.3);
+        border-radius: 3px;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+        pointer-events: none;
+        @media (any-hover:hover) {
+            &:hover {
+                background: rgba(33, 37, 41, 0.6);
+                color: #ffff;
+            }
+        }
+    }
+
+    // .card__body
+
+    &__body {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        gap: rem(15);
+    }
+
+    // .card__date
+
+    &__date {
+        font-size: rem(12);
+        line-height: 1.67;
+        color: #495057;
+        @media (max-width:em(549.98)) {
+            font-size: rem(16);  
+        }
+    }
+
+    // .card__title
+
+    &__title {
+        font-weight: 700;
+        font-size: rem(25);
+        line-height: 1.6;
+        color: #212529;
+        transition: all 0.3s;
+        @media (any-hover:hover) {
+            &:hover {
+                color: #CCD5AE;
+                transition: all 0.3s;
+            }
+        }
+    }
+
+    // .card__link
+
+    &__link {
+    }
+
+    // .card__text
+
+    &__text {
+        flex: 1 1 auto;
+        font-size: rem(12);
+        line-height: 1.67;
+        color: #495057;
+        @media (max-width:em(549.98)) {
+            font-size: rem(16);
+            text-align: justify;  
+        }
+    }
+
+    // .card__author
+
+    &__author {
+        font-size: rem(12);
+        line-height: 1.67;
+        color: #495057;
+        padding-top: rem(15);
+        border-top: 1px solid #E5E5E5;
+        @media (max-width:em(549.98)) {
+            font-size: rem(16);  
+        }
+    }
+}
+// ======= CARD =============
