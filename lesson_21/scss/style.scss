@@ -323,13 +323,13 @@
             content: '+';
             transition: all 0.3s;
         }
-        &:active + .selector__sub-menu {
+        &:focus + .selector__sub-menu {
             visibility: visible;
             opacity: 1;
             transition: all 0.3s;
             left: 0;
         }
-        &:active + .selector__sub-menu::before {
+        &:focus + .selector__sub-menu::before {
             content: '';
             position: absolute;
             bottom: 100%;
