@@ -1,0 +1,201 @@
+
+$mainWhite: #E5E5E5;
+$secondWhite: #F8F9FA;
+$mainColor: #495057;
+
+// =========== DATE =========== 
+.date {
+    line-height: 1.67;
+    max-width: fit-content;
+        // .date_white
+
+        &_white {
+            color: $mainWhite;
+        }
+}
+// =========== DATE =========== 
+
+// =========== TITLE =========== 
+.title {
+    font-weight: 700;
+    font-size: rem(25);
+    line-height: 1.67;
+		// .title_white
+
+		&_white {
+            color: $secondWhite;
+		}
+
+        // .title_small
+
+        &_small {
+            color: #212529;
+            font-weight: 700;
+            @media (max-width:em(999.98)) {
+                font-size: rem(20);
+            }
+        }
+
+        // .title__link
+
+        &__link {
+            transition: all 0.3s;
+            @media (any-hover:hover) {
+                &:hover {
+                    color: #CCD5AE;
+                    transition: all 0.3s;
+                }
+            }
+        }
+
+        // .title_featured
+
+		&_featured {
+            font-weight: 500;
+            color: $secondWhite;
+		}
+
+        // .title_topics
+
+        &_topics {
+            font-weight: 500;
+            font-size: rem(16);
+            line-height: 1.56;
+            color: $secondWhite;
+        }
+
+        // .title_big-world
+
+        &_big-world {
+            font-weight: 500;
+            font-size: rem(16);
+            color: #212529;
+            line-height: math.div(25, 16);
+        }
+
+        // .title_big-thin
+
+        &_big-thin {
+            font-weight: 500;
+        }
+
+        // .title_footer
+
+        &_footer {
+            font-size: rem(18);
+            line-height: math.div(25 , 18);
+            color: $secondWhite;
+        }
+}
+// =========== TITLE =========== 
+
+// =========== TEXT =========== 
+.text {
+    line-height: 1.67;
+    font-weight: 300;
+    font-size: rem(12);
+		// .text_white
+
+		&_white {
+            color: $mainWhite;
+		}
+
+        // .text_bordered-bottom
+
+        &_bordered-bottom {
+            padding-bottom: rem(15);
+            border-bottom: 1px solid #E5E5E5;
+        }
+}
+// =========== TEXT =========== 
+
+// ========== AUTHOR ===========
+.author {
+    width: fit-content;
+}
+// ========== AUTHOR ===========
+// ========= IMAGE LINK ========
+.link-creative {
+    position: absolute;
+    top: rem(30);
+    right: rem(30);
+    font-weight: 700;
+    font-size: rem(8);
+    line-height: 2.5;
+    color: #F8F9FA;
+    padding: rem(3) rem(12);
+    background: rgba(33, 37, 41, 0.3);
+    border-radius: 3px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    @media (any-hover:hover) {
+        &:hover {
+            background: rgba(33, 37, 41, 1);
+            color: #fff;
+            transition: all 0.3s;
+        }
+    }
+    @media (max-width:em(999.98)) {
+        opacity: 1;
+        visibility: visible;
+        font-size: rem(12);
+    }
+
+    // .link-creative_bw
+
+    &_bw {
+        top: rem(25);
+        right: rem(25);
+    }
+}
+// ========= IMAGE LINK ========
+
+// ======= FOOTER ==========
+.footer {
+    margin-top: rem(50);
+    padding: rem(40) 0;
+    color: rgba(248, 249, 250, 0.5);
+    background-color: #212529;
+
+    // .footer__menu-block
+
+    &__menu-block {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: rem(10);
+        column-gap: rem(20);
+        padding-bottom: rem(35);
+        border-bottom: 1px solid rgba(229, 229, 229, 0.2);
+    }
+
+    // .footer__details
+
+    &__details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: rem(20);
+        row-gap: rem(15);
+        padding-top: rem(40);
+    }
+}
+.footer-list {
+
+
+    // .footer-list__link
+
+    &__link {
+        padding: rem(5);
+        transition: all 0.3s;
+        @media (any-hover:hover) {
+            &:hover {
+                color: #fff;
+                transition: all 0.3s;
+            }
+        }
+    }
+}
+// ======= FOOTER ==========
